@@ -1,0 +1,616 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+/* Header styling */
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1rem 1rem 0 1rem;   
+    flex-wrap: wrap;
+}
+.logo{
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin-left: 2rem;
+}
+.menu-icon{
+    /* vertical-align: top; */
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin-right: 2rem;
+}
+
+
+
+/* Hero styling */
+.hero{
+    width:100%;
+    height:110vh;
+    background-image: url(Images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; 
+    margin-top: 1rem;
+}
+
+.hero h3{
+    font-size:350%;
+    font-weight: 400;
+    margin-left:6rem;
+    height:15rem;
+    padding-top:15rem;
+    text-align: left;
+}
+
+
+.hero h1{
+    font-size:650%;
+    font-weight: bolder;
+    margin-left: 6rem;
+    padding: 4.5rem 0.5rem 0 0.5rem;
+}
+
+.hero hr{
+    height:2%;
+    width: 35rem;
+    background-color: white;
+    border: none;
+    margin-left: 6rem;  
+}
+
+.hero-tools{
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+    margin: 2rem 0 0 6rem;
+}
+
+.cleaning,
+.plumbing{
+    margin-left: 7rem;
+}
+
+@media screen and (max-width: 760px) {
+    .hero{
+        height: 50rem;
+        width: 460px;
+        overflow: visible;
+        background-position: 81.49% 50%;
+    }
+    .hero h3{
+        font-size: 200%;
+        font-weight: 200;
+        padding-top: 35rem;
+        height: 10rem;
+        text-align: center;
+        margin: 0;
+    }
+    .hero h1{
+        font-size: 300%;
+        padding-top: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+    .hero hr{
+        width: 20rem;
+        margin: 0;
+        margin-left: 4rem;
+    }
+    .hero-tools{
+        display: none;
+    }
+}
+
+
+/* SERVICE STYLING */
+.service{
+    width: 100%;
+    height: 90vh;
+    background-color: #f2f2f2;
+}
+
+.row{
+    text-align: center;
+    margin: auto;
+}
+
+.o-service{
+    height:10rem;
+    font-size: 100%;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #999999;
+    padding-top: 7rem;
+}
+
+.help{
+    height: 5rem;
+    font-size:300%;
+    color: rgb(20, 20, 20);
+    padding: 0.5rem;
+}
+
+.help-text{
+    height: 3%;
+    font-size:150% ;
+    text-align: center;
+    color: #111111;
+    font-weight: 200;
+    padding: 2%;
+}
+    
+.book-now{
+    height:3.5rem;
+    width:9.5rem;
+    border: 1px solid #e71a23;
+    margin-top:2rem;
+    color:white;
+    background-color: #e71a23;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+    .service{
+        width: 460px;
+    }
+    .o-service{
+        font-size: 80%;
+        font-weight: 90px;
+    }
+    .help{
+        font-size: 300%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .help-text{
+        font-size: 130%;
+    }
+    .help-text br{
+        display: none;
+    }
+    .service .book-now{
+        margin-left: -1rem;
+    }
+}
+
+
+/* NEED HELP STYLING */
+.need-help{
+    width:100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+}
+
+.need-help-pix1{
+    height: 20rem;
+    width:30rem;
+    margin: 3rem 0 1rem 8rem;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-image: url(Images/billionphotos1882993.jpg);
+}
+
+.need-help-text{
+    font-size: large;    
+    width:20rem;
+    margin: 2rem 0 0 10rem;
+    padding: 0.2rem;
+    color: #111111;
+} 
+
+.need-help2 h3{    
+    margin: 5rem 0 0 2rem;
+    height: 3rem;
+    width: 30rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #111111;
+}
+
+.need-help2 h2{    
+    margin: 1rem 0 0 2rem;
+    height: 3rem;
+    width: 30rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color:#e71a23;
+}
+
+.need-help-pix2{
+    height: 20rem;
+    width:30rem;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-image: url(Images/billionphotos1883011.jpg);
+    margin: 2rem 0 1rem 2rem;
+}
+
+@media screen and (max-width: 760px) {
+    .need-help{
+        width: 460px;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .need-help-pix1{
+        width: 100%;
+        margin: 0;
+    }
+    .need-help-text{
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .need-help2 h3{
+        width: 25rem;
+        font-size: 2rem;
+        margin : 0;
+        text-align: center;
+    }
+    .need-help2 h2{
+        width: 25rem;
+        font-size: 1.8rem;
+        margin : 0;
+        text-align: center;
+    }
+    .need-help-pix2{
+        width: 100%;
+        margin: 0;
+        margin-left: 0.5rem;
+    }
+}
+
+
+/* QUALITY STYLING */
+.quality{
+    width:100%;
+    height: 90vh;
+    background-color: rgb(189, 181, 181);
+    display: flex;   
+    overflow-x: hidden;
+}
+
+.quality-pix{
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    height: 90vh;
+    width:30rem;
+    background-image: url(../images/billionphotos1079319min.png);
+    margin:0 0 0 5rem;
+}
+ 
+.quality-text h1{
+    height: 5rem;
+    font-size: 4rem;
+    color: #104e92;
+    margin: 10rem 0 0 3rem;
+}
+
+.quality-text hr{
+   height:0.5rem;
+   background-color: #e71a23;
+   border: none;
+   width:35rem;
+   margin: 0 0 0 3rem;
+}
+
+.quality-text p{    
+    text-align: justify;
+    height: 6rem;
+    width: 30rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin: 1rem 0 0 3rem;
+}
+
+.book-now{
+    height:3.5rem;    
+    width:9.5rem;
+    margin: 2rem 0 0 3rem;
+    color:white;
+    background-color: #e71a23;
+    font-size:medium;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #e71a23;
+} 
+
+@media screen and (max-width: 760px) {
+    .quality{
+        display: flex;
+        flex-direction: column;
+        width: 460px;
+        height: 180vh;
+        margin: 0;
+        margin-top: -12rem;
+    }
+    .quality-pix{
+        width: 20rem;
+        height: 80vh;
+    }
+    .quality-text h1{
+        font-size: 4rem;
+        font-weight: bolder;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 5rem;
+        margin-top: 8rem;
+        margin-left: 3rem;
+    }
+    .quality-text hr{
+        width: 20rem;
+        margin : 0;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+    }
+    .quality-text p{
+        font-size: 1.2rem;
+        text-align: left;
+        width: 23rem;
+    }
+}
+
+
+/* OUR SERVICE STYLING */
+.service2{
+    width:100%;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
+.o-service2{
+    display:flex;
+    margin: 0 0 0 4rem;
+}
+
+.service2 h1{    
+    margin: 3rem 0 2rem 4rem;
+    height: 4rem;
+    font-size: 3rem;
+}
+
+.o-service2-pix {
+    height: 5rem;
+    width: 5rem;
+    background-color: #e71a23;
+    border-radius: 50%;
+    display: inline-block;
+    background-image:url(Images/painting.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 3rem;
+    padding:0.5rem;
+  }
+
+.o-service2-details1 h4{
+    font-size:1.5rem;
+    padding:0.5rem;
+}
+
+.o-service2-text{
+    font-size: 1.3rem;
+    font-style: italic;
+    padding:0.5rem;
+}
+
+.o-service2-details2 .o-service2-pix {
+    background-image:url(Images/electric.svg);
+  }
+
+.o-service2-details2 h4{
+    font-size:1.5rem;
+    padding:0.5rem;
+}
+
+.o-service2-details3 .o-service2-pix{
+    background-image:url(Images/repair.svg);
+  }
+
+.o-service2-details3 h4{
+    font-size:1.5rem;
+    padding:0.5rem;
+}
+
+@media screen and (max-width: 760px) {
+    .service2{
+        width: 460px;
+        height: 180vh;
+    }
+    .o-service2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* ABOUT-US STYLING */
+.about-us{
+    max-width:100%;
+    height:100vh;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: #104e92;
+    color: white;
+    overflow:auto;
+}
+
+.about-us-text{
+    margin:10rem 0 0 15rem;
+    width:30rem;
+}
+
+.about-us-text h4{    
+    font-size:1rem;
+    letter-spacing: 2px;
+}
+
+.about-us-text h3{    
+    font-size: 6rem;
+    font-weight: 500px;
+}
+
+.about-us-text h2{    
+    font-size: 7rem;
+    font-weight: 700px;
+}
+
+.about-us-gallery{
+    display:flex;
+    margin: 5rem 0 0 3rem;
+}
+
+.about-us-img{    
+    height: 13rem;
+    width:13rem;
+}
+
+.img1{
+    background-image: url(Images/frg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img2{
+    background-image: url(Images/billionphotos1882993.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 2rem;
+}
+
+.img3{
+    background-image: url(Images/rg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.img4{
+    background-image: url(Images/billionphotos1882951.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 760px) {
+    .about-us{
+        width: 460px;
+        height: 200vh;
+    }
+    .about-us-text{
+        justify-content: center;
+        margin: 0;
+        margin-top: 4rem;
+        margin-left: 5rem;
+    }
+    .about-us-gallery{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .about-us-text h3{    
+        font-size: 3rem;
+        font-weight: 200px;
+        margin: 0;
+        text-align: left;
+    }
+    .about-us-text h2{    
+        font-size: 3.5rem;
+        font-weight: 300px;
+        margin: 0;
+        text-align: left;
+    }
+    .about-us-img{
+        margin: 0;
+        align-items: center;
+        width: 20rem;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+/* TO DO LIST STYLING */
+.to-do{
+    width: 100%;
+    height:85vh; 
+    text-align: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.to-do h3{
+    height: 6rem;    
+    font-size:2rem;
+    width:45rem;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.to-do p{
+    height: 9rem;    
+    font-size: 1.5rem;
+    width:45rem;
+    letter-spacing:2px;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.to-do .book-now{
+    height:3.5rem;
+    border: 1px solid #e71a23;
+    width:9.5rem;
+    margin: 2rem 0 0 3rem;
+    color:white;
+    background-color: #e71a23;
+    font-size:medium;
+    border-radius: 3px;
+    cursor: pointer; 
+}
+
+ .call-us{
+    height:3.5rem;
+    width:9.5rem;
+    border: 1px solid #454545;
+    text-decoration: none;
+    margin: 2rem 0 0 3rem;
+    color: #454545;
+    background-color: white;
+    font-size:medium;
+    border-radius: 3px;
+    cursor: pointer; 
+    border-width: 1px;
+}
+
+@media screen and (max-width: 760px) {
+    .to-do{
+        width: 460px;
+    }
+    .to-do h3{
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+    .to-do p{
+        width: 30rem;
+    }
+}
